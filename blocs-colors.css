@@ -1,0 +1,45 @@
+/* Drop in Project Settings → Add as custom CSS or via Code Widget <style> */
+:root{
+  --c-bg: #0A0F1F;
+  --c-bg-2: #111A2E;
+  --c-fg: #E8EEF8;
+  --c-muted: #A8B3C7;
+
+  /* Blue gradient tokens */
+  --c-blue-50: #EAF2FF;
+  --c-blue-100:#D6E6FF;
+  --c-blue-200:#AEC9FF;
+  --c-blue-300:#7FA9FF;
+  --c-blue-400:#538BFF;
+  --c-blue-500:#2B6EFF;  /* primary */
+  --c-blue-600:#1E5BE0;
+  --c-blue-700:#184ABB;
+  --c-blue-800:#143C99;
+  --c-blue-900:#0F2E73;
+
+  --grad-hero: linear-gradient(135deg, var(--c-blue-800), var(--c-blue-500));
+  --grad-cta: linear-gradient(135deg, var(--c-blue-600), var(--c-blue-400));
+}
+
+.body, body { background: var(--c-bg); color: var(--c-fg); }
+
+.btn-primary{
+  background: var(--grad-cta);
+  color: white;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 18px;
+}
+.card-clean{
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.hero-trust{
+  background: var(--grad-hero);
+  color: white;
+}
+a { color: var(--c-blue-200); }
+a:hover { color: white; }
